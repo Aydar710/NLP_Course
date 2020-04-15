@@ -7,6 +7,7 @@ from sklearn.metrics import classification_report
 
 from Utils import deserialize_my_normalized_reviews, deserialize_normalized_reviews
 
+# Reviews for training model, received from pickle
 reviews_to_train = deserialize_normalized_reviews()
 
 all_reviews = pandas.read_csv('normallized_reviews.csv', delimiter=',')
@@ -39,8 +40,10 @@ model.add(Dropout(0.5))
 model.add(Dense(3))
 model.compile(metrics=["accuracy"], optimizer='adam', loss='categorical_crossentropy')
 
+# Fitting model
 model.fit(x_train_tfidf, y_train_categorical, epochs=10, batch_size=32)
 
+# Testing model
 result = model.predict(x_test_tfidf)
 
 print(classification_report(y_test_categorical.argmax(axis=1), result.argmax(axis=1)))
