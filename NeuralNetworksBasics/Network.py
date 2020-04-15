@@ -39,7 +39,7 @@ model.add(Dropout(0.5))
 model.add(Dense(3))
 model.compile(metrics=["accuracy"], optimizer='adam', loss='categorical_crossentropy')
 
-model.fit(x_train_tfidf, y_train_categorical, epochs=1, batch_size=32)
+model.fit(x_train_tfidf, y_train_categorical, epochs=10, batch_size=32)
 
 result = model.predict(x_test_tfidf)
 
