@@ -8,7 +8,7 @@ from Utils import deserialize_normalized_reviews, serialize_model, deserialize_m
     deserialize_my_normalized_reviews
 
 reviews_to_train = deserialize_normalized_reviews()
-all_reviews = pandas.read_csv('normallized_reviews.csv', delimiter=',')
+all_reviews = pandas.read_csv('data/normallized_reviews.csv', delimiter=',')
 
 # Creating word2vec model
 model = gensim.models.Word2Vec(reviews_to_train, min_count=2, iter=200)
@@ -26,7 +26,7 @@ print(model.wv.most_similar(positive=['мрак'], topn=3))
 
 # get testing reviews
 reviews_to_test = deserialize_my_normalized_reviews()
-test_labels = pandas.read_csv('my_labels.csv', delimiter=',')
+test_labels = pandas.read_csv('data/my_labels.csv', delimiter=',')
 
 # Getting train and test vecs
 train_vecs = get_average_feature_vecs(reviews_to_train, model, 100)

@@ -3,31 +3,31 @@ import numpy as np
 
 
 def deserialize_normalized_reviews():
-    pickle_in = open("normallized_list.pickle", "rb")
+    pickle_in = open("data/normallized_list.pickle", "rb")
     normalized_reviews = pickle.load(pickle_in)
     return normalized_reviews
 
 
 def deserialize_my_normalized_reviews():
-    pickle_in = open("my_reviews_normalized.pickle", "rb")
+    pickle_in = open("data/my_reviews_normalized.pickle", "rb")
     normalized_reviews = pickle.load(pickle_in)
     return normalized_reviews
 
 
 def serialize_model(model):
-    pickle_out = open("Word2vecModel.pickle", "wb")
+    pickle_out = open("data/Word2vecModel.pickle", "wb")
     pickle.dump(model, pickle_out)
     pickle_out.close()
 
 
 def deserialize_model():
-    pickle_in = open("Word2vecModel.pickle", "rb")
+    pickle_in = open("data/Word2vecModel.pickle", "rb")
     model = pickle.load(pickle_in)
     return model
 
 
 def deserialize_my_normalized_reviews():
-    pickle_in = open("my_reviews_normalized.pickle", "rb")
+    pickle_in = open("data/my_reviews_normalized.pickle", "rb")
     normalized_reviews = pickle.load(pickle_in)
     return normalized_reviews
 
