@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae380b3b-00f9-4854-a148-712136b0010c" name="Default Changelist" comment="fix training">
+    <list default="true" id="ae380b3b-00f9-4854-a148-712136b0010c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Word2vec/.idea/Word2vec.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Word2vec/Utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Word2vec/Word2vec.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Word2vec/Word2vecModel.pickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Word2vec/my_labels.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Word2vec/my_reviews_normalized.pickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Word2vec/normallized_list.pickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Word2vec/normallized_reviews.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../NLP_Homework_2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../NLP_Homework_2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Network.py" beforeDir="false" afterPath="$PROJECT_DIR$/Network.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +49,7 @@
       <recent name="C:\Users\Aydar\PycharmProjects\NLP_Course\NeuralNetworksBasics" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Network_2 (1)">
+  <component name="RunManager" selected="Python.Network">
     <configuration name="Network" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="NeuralNetworksBasics" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -150,7 +157,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Network_2 (1)" />
         <item itemvalue="Python.Network_1 (1)" />
         <item itemvalue="Python.Network_2" />
         <item itemvalue="Python.Network_1" />
@@ -189,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586946035647</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add some comments">
+      <created>1586948301044</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1586948301044</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -197,7 +210,8 @@
     <MESSAGE value="add neural networks. Fix required" />
     <MESSAGE value="corrects" />
     <MESSAGE value="fix training" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix training" />
+    <MESSAGE value="add some comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="add some comments" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="87" width="1089" height="705" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586335641764">
@@ -208,10 +222,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1586342267301" />
-    <state x="417" y="14" key="CommitChangelistDialog2" timestamp="1586946034241">
+    <state x="417" y="14" key="CommitChangelistDialog2" timestamp="1586948300572">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="417" y="14" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586946034241" />
+    <state x="417" y="14" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586948300572" />
     <state x="291" y="72" key="DiffContextDialog" timestamp="1586946030159">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -220,46 +234,46 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="232" y="195" width="438" height="470" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586345707873" />
-    <state width="1514" height="300" key="GridCell.Tab.0.bottom" timestamp="1586948181056">
+    <state width="1514" height="336" key="GridCell.Tab.0.bottom" timestamp="1586952470229">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1514" height="300" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586948181056" />
-    <state width="1514" height="300" key="GridCell.Tab.0.center" timestamp="1586948181056">
+    <state width="1514" height="336" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586952470229" />
+    <state width="1514" height="336" key="GridCell.Tab.0.center" timestamp="1586952470229">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1514" height="300" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586948181056" />
-    <state width="1514" height="300" key="GridCell.Tab.0.left" timestamp="1586948181056">
+    <state width="1514" height="336" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586952470229" />
+    <state width="1514" height="336" key="GridCell.Tab.0.left" timestamp="1586952470228">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1514" height="300" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586948181056" />
-    <state width="1514" height="300" key="GridCell.Tab.0.right" timestamp="1586948181056">
+    <state width="1514" height="336" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586952470228" />
+    <state width="1514" height="336" key="GridCell.Tab.0.right" timestamp="1586952470229">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1514" height="300" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586948181056" />
-    <state width="1514" height="336" key="GridCell.Tab.1.bottom" timestamp="1586944998181">
+    <state width="1514" height="336" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586952470229" />
+    <state width="1514" height="336" key="GridCell.Tab.1.bottom" timestamp="1586952470229">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1514" height="336" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586944998181" />
-    <state width="1514" height="336" key="GridCell.Tab.1.center" timestamp="1586944998181">
+    <state width="1514" height="336" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586952470229" />
+    <state width="1514" height="336" key="GridCell.Tab.1.center" timestamp="1586952470229">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1514" height="336" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1586944998181" />
-    <state width="1514" height="336" key="GridCell.Tab.1.left" timestamp="1586944998181">
+    <state width="1514" height="336" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1586952470229" />
+    <state width="1514" height="336" key="GridCell.Tab.1.left" timestamp="1586952470229">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1514" height="336" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1586944998181" />
-    <state width="1514" height="336" key="GridCell.Tab.1.right" timestamp="1586944998181">
+    <state width="1514" height="336" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1586952470229" />
+    <state width="1514" height="336" key="GridCell.Tab.1.right" timestamp="1586952470229">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1514" height="336" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1586944998181" />
+    <state width="1514" height="336" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1586952470229" />
     <state x="277" y="75" key="SettingsEditor" timestamp="1586339259092">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="75" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1586339259092" />
-    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1586946037469">
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1586948302242">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1586946037469" />
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1586948302242" />
     <state width="768" height="432" key="XDebugger.FullValuePopup" timestamp="1586296598615">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
