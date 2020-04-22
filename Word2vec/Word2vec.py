@@ -1,4 +1,3 @@
-# Reviews for training model, received from pickle
 import gensim.models
 import pandas
 from sklearn.ensemble import RandomForestClassifier
