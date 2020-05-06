@@ -40,7 +40,14 @@ for review in reviews_to_train.append(reviews_to_test):
     if len_review > max_length:
         max_length = len_review
 
-tokenizer = Tokenizer(num_words=len(ruscorpora_data.text))
+all_words = []
+for words in reviews_to_train + reviews_to_test:
+    for word in words:
+        all_words.append(word)
+
+word_set = set(all_words)
+
+tokenizer = Tokenizer(num_words=len(word_set))
 tokenizer.fit_on_texts(ruscorpora_data["text"])
 
 # making reviews as sequences
