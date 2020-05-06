@@ -34,20 +34,18 @@ print("1")
 serialize_ruscorpora_data(ruscorpora_data)
 # ruscorpora_data = deserialize_ruscorpora_data()
 
-tokenizer = Tokenizer(num_words=ruscorpora_data.size)
-tokenizer.fit_on_texts(ruscorpora_data["text"])
-
-# making reviews as sequences
-reviews_to_test = tokenizer.texts_to_sequences(reviews_to_test)
-reviews_to_train = tokenizer.texts_to_sequences(reviews_to_train)
-
-print("2")
-
 max_length = 0
 for review in reviews_to_train.append(reviews_to_test):
     len_review = len(review)
     if len_review > max_length:
         max_length = len_review
+
+tokenizer = Tokenizer(num_words=max_length)
+tokenizer.fit_on_texts(ruscorpora_data["text"])
+
+# making reviews as sequences
+reviews_to_test = tokenizer.texts_to_sequences(reviews_to_test)
+reviews_to_train = tokenizer.texts_to_sequences(reviews_to_train)
 
 # preparing reviews
 reviews_train_prepared = pad_sequences(reviews_to_test, maxlen=max_length, padding='post')
@@ -61,10 +59,11 @@ labels_test_prepared = keras.utils.to_categorical(all_reviews["label"], 3)
 embedding_dim = 300
 embedding_matrix = create_embedding_matrix(ruscorpora_data, tokenizer.word_index, max_length)
 
+vocabulary_size = len(tokenizer.word_index) + 1
 
 # Building neural network
 model = Sequential()
-model.add(Embedding(input_dim=ruscorpora_data.size, weights=[embedding_matrix],
+model.add(Embedding(input_dim=vocabulary_size, weights=[embedding_matrix],
                     output_dim=embedding_dim, input_length=max_length,
                     trainable=False))
 model.add(LSTM(300, recurrent_dropout=0.2))
